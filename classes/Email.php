@@ -121,7 +121,7 @@ class Email {
         $contenido .= "<p>Hola <span style='color: #3498db;'>" . $this->nombre . "</span>,</p>";
         $contenido .= "<p>Haz solicitado reestablecer tu password de AppSalon.</p>";
         $contenido .= "<p>Puedes hacerlo dando clic en el siguiente botón</p>";
-        $contenido .= "<a href='" . $_ENV['SERVER_HOST'] . "/recuperar?token=" . $this->token . "'>Reestablecer Password</a>";
+        $contenido .= "<a href='" . $_ENV['APP'] . "/recuperar?token=" . $this->token . "'>Reestablecer Password</a>";
         $contenido .= "<br>";
         $contenido .= "<hr>";
         $contenido .= "<p class='small'>Si no fuiste tú, puedes ignorar este mensaje.</p>";
