@@ -86,7 +86,7 @@ class Email {
         $mail->Username = $_ENV['EMAIL_USER'];
         $mail->Password = $_ENV['EMAIL_PASSWORD'];
     
-        $mail->setFrom('cuentas@appsalon.com');
+        $mail->setFrom('cuentas.appsalon@zohomail.com');
         $mail->addAddress($this->email);
         $mail->Subject = 'Reestablece tu password';
 
