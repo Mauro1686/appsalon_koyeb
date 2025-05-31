@@ -28,7 +28,7 @@ class Email {
         $mail->Password = $_ENV['EMAIL_PASSWORD'];
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     
-        $mail->setFrom('cuentas@appsalon.com');
+        $mail->setFrom('cuentas.appsalon@zohomail.com');
         $mail->addAddress($this->email);
         $mail->Subject = 'Confirma tu Cuenta';
 
